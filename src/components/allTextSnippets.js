@@ -45,10 +45,26 @@ class AllTextSnippets extends Component {
           <span>{index + 1})</span>
           <span>{text.content}</span>
           <span>{text.lastUpdated}</span>
-          <button onClick={() => this.editText(text.content, index)}>
+          <button
+            style={{
+              backgroundColor: "#008cba",
+              color: "white",
+              border: "none"
+            }}
+            onClick={() => this.editText(text.content, index)}
+          >
             Edit
           </button>
-          <button onClick={() => this.removeText(index)}>Delete</button>
+          <button
+            style={{
+              backgroundColor: "#008cba",
+              color: "white",
+              border: "none"
+            }}
+            onClick={() => this.removeText(index)}
+          >
+            Delete
+          </button>
         </li>
       ));
 
